@@ -2,27 +2,6 @@
 Cryptic is a browser-based AES-256 file encryption tool. It allows you to securely encrypt any file directly in your browser and download it with a .cryptic extension. All encryption and decryption happen locally—your files never leave your device.
 
 Features
-🔒 AES-256-GCM encryption for strong security
-
-🔑 Password-based key derivation (PBKDF2)
-
-🗂️ Encrypts any file type, outputs as .cryptic
-
-🖥️ 100% client-side: No uploads, no data leaves your browser
-
-🛡️ Authenticated encryption with integrity checks
-
-How It Works
-Select a file to encrypt.
-
-Enter a password (used as the encryption key).
-
-Encrypt: Download the encrypted file with a .cryptic extension.
-
-Decrypt: Upload your .cryptic file and enter the password to restore the original.
-
-Usage
-Clone or Download this repository.
 
 Open index.html in your browser.
 
@@ -32,19 +11,6 @@ File Format
 The .cryptic file contains:
 
 16 bytes: Random salt (for key derivation)
-
-12 bytes: Random IV (initialization vector)
-
-Remainder: Encrypted file data (with authentication tag)
-
-Security Notes
-Uses Web Crypto API for all cryptographic operations.
-
-Password is never stored or transmitted.
-
-Salt and IV are randomly generated for each encryption.
-
-Minimum recommended password length: 12 characters.
 
 Example
 text
